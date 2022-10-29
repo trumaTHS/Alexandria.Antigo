@@ -67,6 +67,7 @@
             this.BtnObrasFisicas.TabIndex = 2;
             this.BtnObrasFisicas.Text = "Obras Físicas";
             this.BtnObrasFisicas.UseVisualStyleBackColor = true;
+            this.BtnObrasFisicas.Click += new System.EventHandler(this.BtnObrasFisicas_Click);
             // 
             // BtnObrasVisuais
             // 
@@ -76,6 +77,7 @@
             this.BtnObrasVisuais.TabIndex = 3;
             this.BtnObrasVisuais.Text = "Obras Visuais";
             this.BtnObrasVisuais.UseVisualStyleBackColor = true;
+            this.BtnObrasVisuais.Click += new System.EventHandler(this.BtnObrasVisuais_Click);
             // 
             // BtnAlexandria
             // 

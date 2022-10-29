@@ -16,5 +16,17 @@ namespace Alexandria
         {
             InitializeComponent();
         }
+
+        private void BtnObrasFisicas_Click(object sender, EventArgs e)
+        {
+            FrmObrasFisicas frmObrasFisicas = new FrmObrasFisicas();
+            frmObrasFisicas.ShowDialog();
+        }
+
+        private void BtnObrasVisuais_Click(object sender, EventArgs e)
+        {
+            FrmObrasVisuais frmObrasVisuais = new FrmObrasVisuais();
+            frmObrasVisuais.ShowDialog();
+        }
     }
 }
