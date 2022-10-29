@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Alexandria
 {
-    public partial class Form1 : Form
+    public partial class FrmAlexandria : Form
     {
-        public Form1()
+        public FrmAlexandria()
         {
             InitializeComponent();
         }
