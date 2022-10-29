@@ -52,6 +52,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAlexandriaDesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlexandriaDesc.Designer.cs">
+      <DependentUpon>FrmAlexandriaDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFAQ.Designer.cs">
+      <DependentUpon>FrmFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFuturasAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuturasAtt.Designer.cs">
+      <DependentUpon>FrmFuturasAtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotasAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotasAtt.Designer.cs">
+      <DependentUpon>FrmNotasAtt.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmObrasFisicas.cs">
       <SubType>Form</SubType>
     </Compile>

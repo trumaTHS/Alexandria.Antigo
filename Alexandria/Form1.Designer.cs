@@ -87,6 +87,7 @@
             this.BtnAlexandria.TabIndex = 4;
             this.BtnAlexandria.Text = "Alexandria";
             this.BtnAlexandria.UseVisualStyleBackColor = true;
+            this.BtnAlexandria.Click += new System.EventHandler(this.BtnAlexandria_Click);
             // 
             // BtnFAQ
             // 
@@ -96,6 +97,7 @@
             this.BtnFAQ.TabIndex = 5;
             this.BtnFAQ.Text = "FAQ";
             this.BtnFAQ.UseVisualStyleBackColor = true;
+            this.BtnFAQ.Click += new System.EventHandler(this.BtnFAQ_Click);
             // 
             // BtnNotasAtt
             // 
@@ -105,6 +107,7 @@
             this.BtnNotasAtt.TabIndex = 6;
             this.BtnNotasAtt.Text = "Notas de Atualização";
             this.BtnNotasAtt.UseVisualStyleBackColor = true;
+            this.BtnNotasAtt.Click += new System.EventHandler(this.BtnNotasAtt_Click);
             // 
             // BtnFuturasAtt
             // 
@@ -114,6 +117,7 @@
             this.BtnFuturasAtt.TabIndex = 7;
             this.BtnFuturasAtt.Text = "Futuras Atualizações";
             this.BtnFuturasAtt.UseVisualStyleBackColor = true;
+            this.BtnFuturasAtt.Click += new System.EventHandler(this.BtnFuturasAtt_Click);
             // 
             // BtnSite
             // 
@@ -123,6 +127,7 @@
             this.BtnSite.TabIndex = 8;
             this.BtnSite.Text = "Site";
             this.BtnSite.UseVisualStyleBackColor = true;
+            this.BtnSite.Click += new System.EventHandler(this.BtnSite_Click);
             // 
             // BtnGitHub
             // 
@@ -132,6 +137,7 @@
             this.BtnGitHub.TabIndex = 9;
             this.BtnGitHub.Text = "GitHub";
             this.BtnGitHub.UseVisualStyleBackColor = true;
+            this.BtnGitHub.Click += new System.EventHandler(this.BtnGitHub_Click);
             // 
             // FrmAlexandria
             // 
