@@ -62,5 +62,10 @@ namespace Alexandria
         {
             System.Diagnostics.Process.Start("https://github.com/Spavatii/Alexandria");
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
