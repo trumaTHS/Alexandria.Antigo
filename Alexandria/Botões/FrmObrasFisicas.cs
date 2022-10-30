@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alexandria.Botões;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,18 @@ namespace Alexandria
         {
             FrmLivros frmLivros = new FrmLivros();
             frmLivros.ShowDialog();
+        }
+
+        private void BtnMangas_Click(object sender, EventArgs e)
+        {
+            FrmMangas frmMangas = new FrmMangas();
+            frmMangas.ShowDialog();
+        }
+
+        private void BtnHQs_Click(object sender, EventArgs e)
+        {
+            FrmHQs frmHQs = new FrmHQs();
+            frmHQs.ShowDialog();
         }
     }
 }
