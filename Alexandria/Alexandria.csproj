@@ -75,22 +75,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAlexandriaDesc.cs">
+    <Compile Include="Botões\FrmAlexandriaDesc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAlexandriaDesc.Designer.cs">
+    <Compile Include="Botões\FrmAlexandriaDesc.Designer.cs">
       <DependentUpon>FrmAlexandriaDesc.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFAQ.cs">
+    <Compile Include="Botões\FrmFAQ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFAQ.Designer.cs">
+    <Compile Include="Botões\FrmFAQ.Designer.cs">
       <DependentUpon>FrmFAQ.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFuturasAtt.cs">
+    <Compile Include="Botões\FrmFuturasAtt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFuturasAtt.Designer.cs">
+    <Compile Include="Botões\FrmFuturasAtt.Designer.cs">
       <DependentUpon>FrmFuturasAtt.cs</DependentUpon>
     </Compile>
     <Compile Include="Livros\FrmLivros.cs">
@@ -111,22 +111,22 @@
     <Compile Include="Livros\FrmLivrosVisualizar.Designer.cs">
       <DependentUpon>FrmLivrosVisualizar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmNotasAtt.cs">
+    <Compile Include="Botões\FrmNotasAtt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmNotasAtt.Designer.cs">
+    <Compile Include="Botões\FrmNotasAtt.Designer.cs">
       <DependentUpon>FrmNotasAtt.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmObrasFisicas.cs">
+    <Compile Include="Botões\FrmObrasFisicas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmObrasFisicas.Designer.cs">
+    <Compile Include="Botões\FrmObrasFisicas.Designer.cs">
       <DependentUpon>FrmObrasFisicas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmObrasVisuais.cs">
+    <Compile Include="Botões\FrmObrasVisuais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmObrasVisuais.Designer.cs">
+    <Compile Include="Botões\FrmObrasVisuais.Designer.cs">
       <DependentUpon>FrmObrasVisuais.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -143,10 +143,10 @@
     <EmbeddedResource Include="Livros\FrmLivrosVisualizar.resx">
       <DependentUpon>FrmLivrosVisualizar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmObrasFisicas.resx">
+    <EmbeddedResource Include="Botões\FrmObrasFisicas.resx">
       <DependentUpon>FrmObrasFisicas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmObrasVisuais.resx">
+    <EmbeddedResource Include="Botões\FrmObrasVisuais.resx">
       <DependentUpon>FrmObrasVisuais.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
