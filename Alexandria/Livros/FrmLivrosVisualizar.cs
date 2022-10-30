@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Alexandria
 {
-    public partial class FrmObrasFisicas : Form
+    public partial class FrmLivrosVisualizar : Form
     {
-        public FrmObrasFisicas()
+        public FrmLivrosVisualizar()
         {
             InitializeComponent();
         }
 
-        private void BtnLivros_Click(object sender, EventArgs e)
+        private void BtnLivrosUniversalismo_Click(object sender, EventArgs e)
         {
-            FrmLivros frmLivros = new FrmLivros();
-            frmLivros.ShowDialog();
+            var livro = new ClaVerLivros();
+            DataLivros.DataSource = livro.ObterLivros();
         }
     }
 }
