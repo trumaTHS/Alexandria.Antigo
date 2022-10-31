@@ -16,5 +16,11 @@ namespace Alexandria.Animes
         {
             InitializeComponent();
         }
+
+        private void BtnAnimesUniversalismo_Click(object sender, EventArgs e)
+        {
+            var anime = new ClaVerAnimes();
+            DataAnimes.DataSource = anime.ObterAnimes();
+        }
     }
 }

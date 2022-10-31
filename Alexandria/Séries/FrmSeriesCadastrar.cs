@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alexandria.HQs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace Alexandria.Séries
         public FrmSeriesCadastrar()
         {
             InitializeComponent();
+        }
+
+        private void BtnSeriesSalvar_Click(object sender, EventArgs e)
+        {
+            ClaCadastroSeries serie = new ClaCadastroSeries();
+            serie.Nome = TxtboxSerieNome.Text;
+
+            ClaBancoSeries.NovaSerie(serie);
         }
     }
 }

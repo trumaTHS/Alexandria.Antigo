@@ -16,5 +16,13 @@ namespace Alexandria.Filmes
         {
             InitializeComponent();
         }
+
+        private void BtnFilmesSalvar_Click(object sender, EventArgs e)
+        {
+            ClaCadastroFilmes filme = new ClaCadastroFilmes();
+            filme.Nome = TxtboxFilmeNome.Text;
+
+            ClaBancoFilmes.NovoFilme(filme);
+        }
     }
 }

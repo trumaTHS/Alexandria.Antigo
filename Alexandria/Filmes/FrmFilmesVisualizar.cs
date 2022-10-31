@@ -16,5 +16,11 @@ namespace Alexandria.Filmes
         {
             InitializeComponent();
         }
+
+        private void BtnFilmesUniversalismo_Click(object sender, EventArgs e)
+        {
+            var filme = new ClaVerFilmes();
+            DataFilmes.DataSource = filme.ObterFilmes();
+        }
     }
 }

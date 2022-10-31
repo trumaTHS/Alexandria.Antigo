@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alexandria.Mangás;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace Alexandria.Livros
         public FrmMangasVisualizar()
         {
             InitializeComponent();
+        }
+
+        private void BtnMangasUniversalismo_Click(object sender, EventArgs e)
+        {
+            var manga = new ClaVerMangas();
+            DataMangas.DataSource = manga.ObterMangas();
         }
     }
 }

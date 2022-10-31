@@ -16,5 +16,13 @@ namespace Alexandria.HQs
         {
             InitializeComponent();
         }
+
+        private void BtnHQsSalvar_Click(object sender, EventArgs e)
+        {
+            ClaCadastroHQs HQ = new ClaCadastroHQs();
+            HQ.ISBN = TxtboxHQISBN.Text;
+
+            ClaBancoHQs.NovaHQ(HQ);
+        }
     }
 }

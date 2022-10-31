@@ -65,6 +65,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animes\ClaBancoAnimes.cs" />
+    <Compile Include="Animes\ClaCadastroAnimes.cs" />
+    <Compile Include="Animes\ClaVerAnimes.cs" />
     <Compile Include="Animes\FrmAnimes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +86,9 @@
     <Compile Include="Animes\FrmAnimesVisualizar.Designer.cs">
       <DependentUpon>FrmAnimesVisualizar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Filmes\ClaBancoFilmes.cs" />
+    <Compile Include="Filmes\ClaCadastroFilmes.cs" />
+    <Compile Include="Filmes\ClaVerFilmes.cs" />
     <Compile Include="Filmes\FrmFilmes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     <Compile Include="Filmes\FrmFilmesCadastrar.Designer.cs">
       <DependentUpon>FrmFilmesCadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="HQs\ClaBancoHQs.cs" />
+    <Compile Include="HQs\ClaCadastroHQs.cs" />
+    <Compile Include="HQs\ClaVerHQs.cs" />
     <Compile Include="HQs\FrmHQs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +128,9 @@
     <Compile Include="HQs\FrmHQsVisualizar.Designer.cs">
       <DependentUpon>FrmHQsVisualizar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mangás\ClaBancoMangas.cs" />
+    <Compile Include="Mangás\ClaCadastroMangas.cs" />
+    <Compile Include="Mangás\ClaVerMangas.cs" />
     <Compile Include="Mangás\FrmMangasCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +149,9 @@
     <Compile Include="Mangás\FrmMangas.Designer.cs">
       <DependentUpon>FrmMangas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Séries\ClaBancoSeries.cs" />
+    <Compile Include="Séries\ClaCadastroSeries.cs" />
+    <Compile Include="Séries\ClaVerSeries.cs" />
     <Compile Include="Séries\FrmSeries.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,14 +239,32 @@
     <EmbeddedResource Include="Animes\FrmAnimes.resx">
       <DependentUpon>FrmAnimes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Animes\FrmAnimesCadastrar.resx">
+      <DependentUpon>FrmAnimesCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animes\FrmAnimesVisualizar.resx">
+      <DependentUpon>FrmAnimesVisualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Filmes\FrmFilmes.resx">
       <DependentUpon>FrmFilmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filmes\FrmFilmesCadastrar.resx">
+      <DependentUpon>FrmFilmesCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filmes\FrmFilmesVisualizar.resx">
+      <DependentUpon>FrmFilmesVisualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HQs\FrmHQs.resx">
       <DependentUpon>FrmHQs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HQs\FrmHQsCadastrar.resx">
+      <DependentUpon>FrmHQsCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HQs\FrmHQsVisualizar.resx">
+      <DependentUpon>FrmHQsVisualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Livros\FrmLivros.resx">
       <DependentUpon>FrmLivros.cs</DependentUpon>
@@ -251,6 +284,12 @@
     <EmbeddedResource Include="Mangás\FrmMangas.resx">
       <DependentUpon>FrmMangas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mangás\FrmMangasCadastrar.resx">
+      <DependentUpon>FrmMangasCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mangás\FrmMangasVisualizar.resx">
+      <DependentUpon>FrmMangasVisualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -258,6 +297,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Séries\FrmSeries.resx">
       <DependentUpon>FrmSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Séries\FrmSeriesCadastrar.resx">
+      <DependentUpon>FrmSeriesCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Séries\FrmSeriesVisualizar.resx">
+      <DependentUpon>FrmSeriesVisualizar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

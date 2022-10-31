@@ -16,5 +16,13 @@ namespace Alexandria.Animes
         {
             InitializeComponent();
         }
+
+        private void BtnAnimesSalvar_Click(object sender, EventArgs e)
+        {
+            ClaCadastroAnimes anime = new ClaCadastroAnimes();
+            anime.Nome = TxtboxAnimeNome.Text;
+
+            ClaBancoAnimes.NovoAnime(anime);
+        }
     }
 }

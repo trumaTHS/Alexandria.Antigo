@@ -16,5 +16,11 @@ namespace Alexandria.Séries
         {
             InitializeComponent();
         }
+
+        private void BtnSeriesUniversalismo_Click(object sender, EventArgs e)
+        {
+            var serie = new ClaVerSeries();
+            DataSeries.DataSource = serie.ObterSeries();
+        }
     }
 }

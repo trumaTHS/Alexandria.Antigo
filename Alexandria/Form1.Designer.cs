@@ -79,7 +79,7 @@
             this.BtnObrasFisicas.Name = "BtnObrasFisicas";
             this.BtnObrasFisicas.Size = new System.Drawing.Size(900, 49);
             this.BtnObrasFisicas.TabIndex = 2;
-            this.BtnObrasFisicas.Text = "Obras Físicas \r\n(livros)";
+            this.BtnObrasFisicas.Text = "Obras Físicas \r\n(livros, mangás, HQs)";
             this.BtnObrasFisicas.UseVisualStyleBackColor = true;
             this.BtnObrasFisicas.Click += new System.EventHandler(this.BtnObrasFisicas_Click);
             // 
@@ -91,7 +91,7 @@
             this.BtnObrasVisuais.Name = "BtnObrasVisuais";
             this.BtnObrasVisuais.Size = new System.Drawing.Size(900, 49);
             this.BtnObrasVisuais.TabIndex = 3;
-            this.BtnObrasVisuais.Text = "Obras Visuais";
+            this.BtnObrasVisuais.Text = "Obras Visuais\r\n(filmes, animes, séries)";
             this.BtnObrasVisuais.UseVisualStyleBackColor = true;
             this.BtnObrasVisuais.Click += new System.EventHandler(this.BtnObrasVisuais_Click);
             // 

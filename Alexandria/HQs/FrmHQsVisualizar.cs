@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alexandria.Animes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace Alexandria.HQs
         public FrmHQsVisualizar()
         {
             InitializeComponent();
+        }
+
+        private void BtnHQsUniversalismo_Click(object sender, EventArgs e)
+        {
+            var HQ = new ClaVerHQs();
+            DataHQs.DataSource = HQ.ObterHQs();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alexandria.Mangás;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace Alexandria.Livros
         public FrmMangasCadastrar()
         {
             InitializeComponent();
+        }
+
+        private void BtnMangasSalvar_Click(object sender, EventArgs e)
+        {
+            ClaCadastroMangas manga = new ClaCadastroMangas();
+            manga.ISBN = TxtboxMangaISBN.Text;
+
+            ClaBancoMangas.NovoManga(manga);
         }
     }
 }
