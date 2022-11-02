@@ -31,8 +31,24 @@ namespace Alexandria.Filmes
             {
                 // Realizando a inserção no Banco de Dados
                 var cmd = ConexaoBanco().CreateCommand();
-                cmd.CommandText = "INSERT INTO tb_Filmes (Nome) VALUES (@Nome)";
+                cmd.CommandText = "INSERT INTO tb_Filmes " +
+                    "(Nome, Nome_Original, Diretor, Elenco_Principal, Estúdio, Ano, Ordem, Duração, Gênero, Faixa_Etária, Série, Data_de_Início, Data_de_Conclusão, Nota, Resenha) " +
+                    "VALUES (@Nome, @Nome_Original, @Diretor, @Elenco_Principal, @Estúdio, @Ano, @Ordem, @Duração, @Gênero, @Faixa_Etária, @Série, @Data_de_Início, @Data_de_Conclusão, @Nota, @Resenha)";
                 cmd.Parameters.AddWithValue("@Nome", u.Nome);
+                cmd.Parameters.AddWithValue("@Nome_Original", u.Nome);
+                cmd.Parameters.AddWithValue("@Diretor", u.Nome);
+                cmd.Parameters.AddWithValue("@Elenco_Principal", u.Nome);
+                cmd.Parameters.AddWithValue("@Estúdio", u.Nome);
+                cmd.Parameters.AddWithValue("@Ano", u.Nome);
+                cmd.Parameters.AddWithValue("@Ordem", u.Nome);
+                cmd.Parameters.AddWithValue("@Duração", u.Nome);
+                cmd.Parameters.AddWithValue("@Gênero", u.Nome);
+                cmd.Parameters.AddWithValue("@Faixa_Etária", u.Nome);
+                cmd.Parameters.AddWithValue("@Série", u.Nome);
+                cmd.Parameters.AddWithValue("@Data_de_Início", u.Nome);
+                cmd.Parameters.AddWithValue("@Data_de_Conclusão", u.Nome);
+                cmd.Parameters.AddWithValue("@Nota", u.Nome);
+                cmd.Parameters.AddWithValue("@Resenha", u.Nome);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Filme cadastrado com sucesso");
                 ConexaoBanco().Close();

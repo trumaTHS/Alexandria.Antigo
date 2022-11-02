@@ -31,8 +31,26 @@ namespace Alexandria.Mangás
             {
                 // Realizando a inserção no Banco de Dados
                 var cmd = ConexaoBanco().CreateCommand();
-                cmd.CommandText = "INSERT INTO tb_Mangas (ISBN) VALUES (@ISBN)";
+                cmd.CommandText = "INSERT INTO tb_Mangas " +
+                    "(ISBN, Nome, Nome_Original, Autor, Serialização, Editora, Edição, Ano, Volume, Capítulos, Gênero, Faixa_Etária, Série, Data_de_Início, Data_de_Conclusão, Nota, Resenha) " +
+                    "VALUES (@ISBN, @Nome, @Nome_Original, @Autor, @Serialização, @Editora, @Edição, @Ano, @Volume, @Capítulos, @Gênero, @Faixa_Etária, @Série, @Data_de_Início, @Data_de_Conclusão, @Nota, @Resenha)";
                 cmd.Parameters.AddWithValue("@ISBN", u.ISBN);
+                cmd.Parameters.AddWithValue("@Nome", u.Nome);
+                cmd.Parameters.AddWithValue("@Nome_Original", u.Nome_Original);
+                cmd.Parameters.AddWithValue("@Autor", u.Autor);
+                cmd.Parameters.AddWithValue("@Serialização", u.Serialização);
+                cmd.Parameters.AddWithValue("@Editora", u.Editora);
+                cmd.Parameters.AddWithValue("@Edição", u.Edição);
+                cmd.Parameters.AddWithValue("@Ano", u.Ano);
+                cmd.Parameters.AddWithValue("@Volume", u.Volume);
+                cmd.Parameters.AddWithValue("@Capítulos", u.Capítulos);
+                cmd.Parameters.AddWithValue("@Gênero", u.Gênero);
+                cmd.Parameters.AddWithValue("@Faixa_Etária", u.Faixa_Etária);
+                cmd.Parameters.AddWithValue("@Série", u.Série);
+                cmd.Parameters.AddWithValue("@Data_de_Início", u.Data_de_Início);
+                cmd.Parameters.AddWithValue("@Data_de_Conclusão", u.Data_de_Conclusão);
+                cmd.Parameters.AddWithValue("@Nota", u.Nota);
+                cmd.Parameters.AddWithValue("@Resenha", u.Resenha);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Mangá cadastrado com sucesso");
                 ConexaoBanco().Close();

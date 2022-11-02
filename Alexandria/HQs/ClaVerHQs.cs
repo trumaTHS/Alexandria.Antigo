@@ -12,11 +12,27 @@ namespace Alexandria.HQs
     public class ClaVerHQs
     {
         public string ISBN { get; set; }
+        public string Nome { get; set; }
+        public string Nome_Original { get; set; }
+        public string Autor { get; set; }
+        public string Serialização { get; set; }
+        public string Editora { get; set; }
+        public int Edição { get; set; }
+        public int Ano { get; set; }
+        public int Volume { get; set; }
+        public string Gênero { get; set; }
+        public string Faixa_Etária { get; set; }
+        public string Série { get; set; }
+        public string Data_de_Início { get; set; }
+        public string Data_de_Conclusão { get; set; }
+        public int Nota { get; set; }
+        public string Resenha { get; set; }
 
         public DataTable ObterHQs()
 
         {
-            var sql = "SELECT ISBN FROM tb_HQs";
+            var sql = "SELECT ISBN, Nome, Nome_Original, Autor, Serialização, Editora, Edição, Ano, Volume, " +
+                "Gênero, Faixa_Etária, Série, Data_de_Início, Data_de_Conclusão, Nota, Resenha FROM tb_HQs";
 
             var DT_HQs = new DataTable();
 

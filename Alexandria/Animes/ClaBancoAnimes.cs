@@ -31,15 +31,32 @@ namespace Alexandria.Animes
             {
                 // Realizando a inserção no Banco de Dados
                 var cmd = ConexaoBanco().CreateCommand();
-                cmd.CommandText = "INSERT INTO tb_Animes (Nome) VALUES (@Nome)";
+                cmd.CommandText = "INSERT INTO tb_Animes " +
+                    "(Nome, Nome_Original, Diretor, Estúdio, Publicação, Término, Estação, Temporada, Episódios, Gênero, Faixa_Etária, Série, Data_de_Início, Data_de_Conclusão, Nota, Resenha) " +
+                    "VALUES (@Nome, @Nome_Original, @Diretor, @Estúdio, @Publicação, @Término, @Estação, @Temporada, @Episódios, @Gênero, @Faixa_Etária, @Série, @Data_de_Início, @Data_de_Conclusão, @Nota, @Resenha)";
                 cmd.Parameters.AddWithValue("@Nome", u.Nome);
+                cmd.Parameters.AddWithValue("@Nome_Original", u.Nome_Original);
+                cmd.Parameters.AddWithValue("@Diretor", u.Diretor);
+                cmd.Parameters.AddWithValue("@Estúdio", u.Estúdio);
+                cmd.Parameters.AddWithValue("@Publicação", u.Publicação);
+                cmd.Parameters.AddWithValue("@Término", u.Término);
+                cmd.Parameters.AddWithValue("@Estação", u.Estação);
+                cmd.Parameters.AddWithValue("@Temporada", u.Temporada);
+                cmd.Parameters.AddWithValue("@Episódios", u.Episódios);
+                cmd.Parameters.AddWithValue("@Gênero", u.Gênero);
+                cmd.Parameters.AddWithValue("@Faixa_Etária", u.Faixa_Etária);
+                cmd.Parameters.AddWithValue("@Série", u.Série);
+                cmd.Parameters.AddWithValue("@Data_de_Início", u.Data_de_Início);
+                cmd.Parameters.AddWithValue("@Data_de_Conclusão", u.Data_de_Conclusão);
+                cmd.Parameters.AddWithValue("@Nota", u.Nota);
+                cmd.Parameters.AddWithValue("@Resenha", u.Resenha);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Anime cadastrado com sucesso");
                 ConexaoBanco().Close();
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Erro ao gravar novo Anime");
+                MessageBox.Show(ex.Message, "Erro ao gravar novo Anime");
                 ConexaoBanco().Close();
             }
         }

@@ -31,9 +31,26 @@ namespace Alexandria
             {
                 // Realizando a inserção no Banco de Dados
                 var cmd = ConexaoBanco().CreateCommand();
-                cmd.CommandText = "INSERT INTO tb_Livros (ISBN, Nome) VALUES (@ISBN, @Nome)";
+                cmd.CommandText = "INSERT INTO tb_Livros " +
+                    "(ISBN, Nome, Nome_Original, Autor, Editora, Edição, Ano, Tradutor, Volume, Páginas, Gênero, Faixa_Etária, Série, Data_de_Início, Data_de_Conclusão, Nota, Resenha) " +
+                    "VALUES (@ISBN, @Nome, @Nome_Original, @Autor, @Editora, @Edição, @Ano, @Tradutor, @Volume, @Páginas, @Gênero, @Faixa_Etária, @Série, @Data_de_Início, @Data_de_Conclusão, @Nota, @Resenha)";
                 cmd.Parameters.AddWithValue("@ISBN", u.ISBN);
                 cmd.Parameters.AddWithValue("@Nome", u.Nome);
+                cmd.Parameters.AddWithValue("@Nome_Original", u.Nome_Original);
+                cmd.Parameters.AddWithValue("@Autor", u.Autor);
+                cmd.Parameters.AddWithValue("@Editora", u.Editora);
+                cmd.Parameters.AddWithValue("@Edição", u.Edição);
+                cmd.Parameters.AddWithValue("@Ano", u.Ano);
+                cmd.Parameters.AddWithValue("@Tradutor", u.Tradutor);
+                cmd.Parameters.AddWithValue("@Volume", u.Volume);
+                cmd.Parameters.AddWithValue("@Páginas", u.Páginas);
+                cmd.Parameters.AddWithValue("@Gênero", u.Gênero);
+                cmd.Parameters.AddWithValue("@Faixa_Etária", u.Faixa_Etária);
+                cmd.Parameters.AddWithValue("@Série", u.Série);
+                cmd.Parameters.AddWithValue("@Data_de_Início", u.Data_de_Início);
+                cmd.Parameters.AddWithValue("@Data_de_Conclusão", u.Data_de_Conclusão);
+                cmd.Parameters.AddWithValue("@Nota", u.Nota);
+                cmd.Parameters.AddWithValue("@Resenha", u.Resenha);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Livro cadastrado com sucesso");
                 ConexaoBanco().Close();
