@@ -30,5 +30,10 @@ namespace Alexandria.Botões
             FrmAnimesCadastrar frmAnimesCadastrar = new FrmAnimesCadastrar();
             frmAnimesCadastrar.ShowDialog();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

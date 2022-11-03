@@ -35,5 +35,10 @@ namespace Alexandria
             FrmSeries frmSeries = new FrmSeries();
             frmSeries.ShowDialog();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

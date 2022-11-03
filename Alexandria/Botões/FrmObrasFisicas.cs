@@ -35,5 +35,10 @@ namespace Alexandria
             FrmHQs frmHQs = new FrmHQs();
             frmHQs.ShowDialog();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

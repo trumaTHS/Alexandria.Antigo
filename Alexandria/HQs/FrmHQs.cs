@@ -29,5 +29,10 @@ namespace Alexandria.Botões
             FrmHQsCadastrar frmHQsCadastrar = new FrmHQsCadastrar();
             frmHQsCadastrar.ShowDialog();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

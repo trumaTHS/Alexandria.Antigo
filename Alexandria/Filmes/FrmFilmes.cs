@@ -29,5 +29,10 @@ namespace Alexandria.Botões
             FrmFilmesCadastrar frmFilmesCadastrar = new FrmFilmesCadastrar();
             frmFilmesCadastrar.ShowDialog();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -28,5 +28,10 @@ namespace Alexandria
             FrmLivrosCadastrar frmLivrosCadastrar = new FrmLivrosCadastrar();
             frmLivrosCadastrar.ShowDialog();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
