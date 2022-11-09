@@ -22,5 +22,10 @@ namespace Alexandria.Animes
             var anime = new ClaVerAnimes();
             DataAnimes.DataSource = anime.ObterAnimes();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

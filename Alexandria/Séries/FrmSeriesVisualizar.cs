@@ -22,5 +22,10 @@ namespace Alexandria.Séries
             var serie = new ClaVerSeries();
             DataSeries.DataSource = serie.ObterSeries();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

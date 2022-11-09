@@ -41,5 +41,10 @@ namespace Alexandria.Livros
 
             ClaBancoMangas.NovoManga(manga);
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

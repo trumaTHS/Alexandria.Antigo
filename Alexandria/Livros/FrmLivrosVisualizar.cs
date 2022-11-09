@@ -22,5 +22,10 @@ namespace Alexandria
             var livro = new ClaVerLivros();
             DataLivros.DataSource = livro.ObterLivros();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

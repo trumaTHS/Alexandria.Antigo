@@ -39,5 +39,10 @@ namespace Alexandria.HQs
 
             ClaBancoHQs.NovaHQ(HQ);
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -40,5 +40,10 @@ namespace Alexandria
 
         ClaBancoLivros.NovoLivro(livro);
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

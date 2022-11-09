@@ -23,5 +23,10 @@ namespace Alexandria.HQs
             var HQ = new ClaVerHQs();
             DataHQs.DataSource = HQ.ObterHQs();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

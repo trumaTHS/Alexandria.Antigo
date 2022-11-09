@@ -28,38 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnimesVisualizar));
             this.DataAnimes = new System.Windows.Forms.DataGridView();
             this.BtnAnimesUniversalismo = new System.Windows.Forms.Button();
+            this.BtnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataAnimes)).BeginInit();
             this.SuspendLayout();
             // 
             // DataAnimes
             // 
             this.DataAnimes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataAnimes.Location = new System.Drawing.Point(279, 87);
+            this.DataAnimes.Location = new System.Drawing.Point(12, 12);
             this.DataAnimes.Name = "DataAnimes";
-            this.DataAnimes.Size = new System.Drawing.Size(240, 150);
+            this.DataAnimes.Size = new System.Drawing.Size(1092, 524);
             this.DataAnimes.TabIndex = 0;
             // 
             // BtnAnimesUniversalismo
             // 
-            this.BtnAnimesUniversalismo.Location = new System.Drawing.Point(406, 274);
+            this.BtnAnimesUniversalismo.Font = new System.Drawing.Font("SpellcasterW01-Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAnimesUniversalismo.Location = new System.Drawing.Point(12, 542);
             this.BtnAnimesUniversalismo.Name = "BtnAnimesUniversalismo";
-            this.BtnAnimesUniversalismo.Size = new System.Drawing.Size(75, 23);
+            this.BtnAnimesUniversalismo.Size = new System.Drawing.Size(924, 55);
             this.BtnAnimesUniversalismo.TabIndex = 1;
-            this.BtnAnimesUniversalismo.Text = "button1";
+            this.BtnAnimesUniversalismo.Text = "Universalizar";
             this.BtnAnimesUniversalismo.UseVisualStyleBackColor = true;
             this.BtnAnimesUniversalismo.Click += new System.EventHandler(this.BtnAnimesUniversalismo_Click);
+            // 
+            // BtnVoltar
+            // 
+            this.BtnVoltar.Font = new System.Drawing.Font("SpellcasterW01-Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVoltar.Location = new System.Drawing.Point(943, 542);
+            this.BtnVoltar.Name = "BtnVoltar";
+            this.BtnVoltar.Size = new System.Drawing.Size(161, 55);
+            this.BtnVoltar.TabIndex = 3;
+            this.BtnVoltar.Text = "Voltar";
+            this.BtnVoltar.UseVisualStyleBackColor = true;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
             // 
             // FrmAnimesVisualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1116, 609);
+            this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.BtnAnimesUniversalismo);
             this.Controls.Add(this.DataAnimes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmAnimesVisualizar";
-            this.Text = "FrmAnimesVisualizar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Visualizar Animes";
             ((System.ComponentModel.ISupportInitialize)(this.DataAnimes)).EndInit();
             this.ResumeLayout(false);
 
@@ -69,5 +88,6 @@
 
         private System.Windows.Forms.DataGridView DataAnimes;
         private System.Windows.Forms.Button BtnAnimesUniversalismo;
+        private System.Windows.Forms.Button BtnVoltar;
     }
 }

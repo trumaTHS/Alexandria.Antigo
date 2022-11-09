@@ -23,5 +23,10 @@ namespace Alexandria.Livros
             var manga = new ClaVerMangas();
             DataMangas.DataSource = manga.ObterMangas();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

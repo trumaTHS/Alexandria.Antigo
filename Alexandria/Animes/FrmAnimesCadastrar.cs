@@ -39,5 +39,10 @@ namespace Alexandria.Animes
 
             ClaBancoAnimes.NovoAnime(anime);
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -40,5 +40,10 @@ namespace Alexandria.Séries
 
             ClaBancoSeries.NovaSerie(serie);
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

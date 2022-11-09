@@ -28,38 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMangasVisualizar));
             this.DataMangas = new System.Windows.Forms.DataGridView();
             this.BtnMangasUniversalismo = new System.Windows.Forms.Button();
+            this.BtnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataMangas)).BeginInit();
             this.SuspendLayout();
             // 
             // DataMangas
             // 
             this.DataMangas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataMangas.Location = new System.Drawing.Point(396, 136);
+            this.DataMangas.Location = new System.Drawing.Point(12, 12);
             this.DataMangas.Name = "DataMangas";
-            this.DataMangas.Size = new System.Drawing.Size(240, 150);
+            this.DataMangas.Size = new System.Drawing.Size(1092, 524);
             this.DataMangas.TabIndex = 0;
             // 
             // BtnMangasUniversalismo
             // 
-            this.BtnMangasUniversalismo.Location = new System.Drawing.Point(447, 321);
+            this.BtnMangasUniversalismo.Font = new System.Drawing.Font("SpellcasterW01-Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMangasUniversalismo.Location = new System.Drawing.Point(12, 542);
             this.BtnMangasUniversalismo.Name = "BtnMangasUniversalismo";
-            this.BtnMangasUniversalismo.Size = new System.Drawing.Size(75, 23);
+            this.BtnMangasUniversalismo.Size = new System.Drawing.Size(924, 55);
             this.BtnMangasUniversalismo.TabIndex = 1;
-            this.BtnMangasUniversalismo.Text = "button1";
+            this.BtnMangasUniversalismo.Text = "Universalizar";
             this.BtnMangasUniversalismo.UseVisualStyleBackColor = true;
             this.BtnMangasUniversalismo.Click += new System.EventHandler(this.BtnMangasUniversalismo_Click);
+            // 
+            // BtnVoltar
+            // 
+            this.BtnVoltar.Font = new System.Drawing.Font("SpellcasterW01-Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVoltar.Location = new System.Drawing.Point(943, 542);
+            this.BtnVoltar.Name = "BtnVoltar";
+            this.BtnVoltar.Size = new System.Drawing.Size(161, 55);
+            this.BtnVoltar.TabIndex = 3;
+            this.BtnVoltar.Text = "Voltar";
+            this.BtnVoltar.UseVisualStyleBackColor = true;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
             // 
             // FrmMangasVisualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1116, 609);
+            this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.BtnMangasUniversalismo);
             this.Controls.Add(this.DataMangas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmMangasVisualizar";
-            this.Text = "FrmMangasVisualizar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Visualizar Mangás";
             ((System.ComponentModel.ISupportInitialize)(this.DataMangas)).EndInit();
             this.ResumeLayout(false);
 
@@ -69,5 +88,6 @@
 
         private System.Windows.Forms.DataGridView DataMangas;
         private System.Windows.Forms.Button BtnMangasUniversalismo;
+        private System.Windows.Forms.Button BtnVoltar;
     }
 }

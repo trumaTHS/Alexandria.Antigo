@@ -38,5 +38,10 @@ namespace Alexandria.Filmes
 
             ClaBancoFilmes.NovoFilme(filme);
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

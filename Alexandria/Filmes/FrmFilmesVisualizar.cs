@@ -22,5 +22,10 @@ namespace Alexandria.Filmes
             var filme = new ClaVerFilmes();
             DataFilmes.DataSource = filme.ObterFilmes();
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
