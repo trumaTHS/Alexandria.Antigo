@@ -15,9 +15,6 @@ namespace Alexandria
         public FrmAlexandria()
         {
             InitializeComponent();
-            
-            FrmInicio frmInicio = new FrmInicio();
-            frmInicio.ShowDialog();
         }
 
         private void BtnObrasFisicas_Click(object sender, EventArgs e)
@@ -34,27 +31,31 @@ namespace Alexandria
 
         private void BtnAlexandria_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/alexandria");
+            FrmAlexandriaDesc frmAlexandriaDesc = new FrmAlexandriaDesc();
+            frmAlexandriaDesc.ShowDialog();
         }
 
         private void BtnFAQ_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/faq");
+            FrmFAQ frmFAQ = new FrmFAQ();
+            frmFAQ.ShowDialog();
         }
 
         private void BtnNotasAtt_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/notas-de-atualiza%C3%A7%C3%A3o");
+            FrmNotasAtt frmNotasAtt = new FrmNotasAtt();
+            frmNotasAtt.ShowDialog();
         }
 
         private void BtnFuturasAtt_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/futuras-atualiza%C3%A7%C3%B5es");
+            FrmFuturasAtt frmFuturasAtt = new FrmFuturasAtt();
+            frmFuturasAtt.ShowDialog();
         }
 
         private void BtnSite_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/Alexandria");
+            System.Diagnostics.Process.Start("https://www.google.com/");
         }
 
         private void BtnGitHub_Click(object sender, EventArgs e)
@@ -63,11 +64,6 @@ namespace Alexandria
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmAlexandria_Load(object sender, EventArgs e)
         {
 
         }

@@ -237,7 +237,6 @@
             this.Name = "FrmAlexandria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alexandria";
-            this.Load += new System.EventHandler(this.FrmAlexandria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCabala)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLouro)).EndInit();
