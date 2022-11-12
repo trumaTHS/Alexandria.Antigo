@@ -15,6 +15,9 @@ namespace Alexandria
         public FrmAlexandria()
         {
             InitializeComponent();
+
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.ShowDialog();
         }
 
         private void BtnObrasFisicas_Click(object sender, EventArgs e)
@@ -31,31 +34,27 @@ namespace Alexandria
 
         private void BtnAlexandria_Click(object sender, EventArgs e)
         {
-            FrmAlexandriaDesc frmAlexandriaDesc = new FrmAlexandriaDesc();
-            frmAlexandriaDesc.ShowDialog();
+            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/alexandria");
         }
 
         private void BtnFAQ_Click(object sender, EventArgs e)
         {
-            FrmFAQ frmFAQ = new FrmFAQ();
-            frmFAQ.ShowDialog();
+            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/faq");
         }
 
         private void BtnNotasAtt_Click(object sender, EventArgs e)
         {
-            FrmNotasAtt frmNotasAtt = new FrmNotasAtt();
-            frmNotasAtt.ShowDialog();
+            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/notas-de-atualiza%C3%A7%C3%A3o");
         }
 
         private void BtnFuturasAtt_Click(object sender, EventArgs e)
         {
-            FrmFuturasAtt frmFuturasAtt = new FrmFuturasAtt();
-            frmFuturasAtt.ShowDialog();
+            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/futuras-atualiza%C3%A7%C3%B5es");
         }
 
         private void BtnSite_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.google.com/");
+            System.Diagnostics.Process.Start("https://sites.google.com/view/projeto-alexandria/Alexandria");
         }
 
         private void BtnGitHub_Click(object sender, EventArgs e)

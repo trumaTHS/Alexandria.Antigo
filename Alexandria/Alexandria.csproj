@@ -122,6 +122,12 @@
     <Compile Include="Filmes\FrmFilmesCadastrar.Designer.cs">
       <DependentUpon>FrmFilmesCadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="HQs\ClaBancoHQs.cs" />
     <Compile Include="HQs\ClaCadastroHQs.cs" />
     <Compile Include="HQs\ClaVerHQs.cs" />
@@ -183,24 +189,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Botões\FrmAlexandriaDesc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Botões\FrmAlexandriaDesc.Designer.cs">
-      <DependentUpon>FrmAlexandriaDesc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Botões\FrmFAQ.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Botões\FrmFAQ.Designer.cs">
-      <DependentUpon>FrmFAQ.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Botões\FrmFuturasAtt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Botões\FrmFuturasAtt.Designer.cs">
-      <DependentUpon>FrmFuturasAtt.cs</DependentUpon>
-    </Compile>
     <Compile Include="Livros\FrmLivros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,12 +206,6 @@
     </Compile>
     <Compile Include="Livros\FrmLivrosVisualizar.Designer.cs">
       <DependentUpon>FrmLivrosVisualizar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Botões\FrmNotasAtt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Botões\FrmNotasAtt.Designer.cs">
-      <DependentUpon>FrmNotasAtt.cs</DependentUpon>
     </Compile>
     <Compile Include="Botões\FrmObrasFisicas.cs">
       <SubType>Form</SubType>
@@ -271,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HQs\FrmHQs.resx">
       <DependentUpon>FrmHQs.cs</DependentUpon>
@@ -364,6 +349,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\monstro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
