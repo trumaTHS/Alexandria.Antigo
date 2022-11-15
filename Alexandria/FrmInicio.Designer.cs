@@ -96,7 +96,7 @@
             // BtnDesconhecido
             // 
             this.BtnDesconhecido.Font = new System.Drawing.Font("Beyond Wonderland", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDesconhecido.Location = new System.Drawing.Point(329, 12);
+            this.BtnDesconhecido.Location = new System.Drawing.Point(329, 13);
             this.BtnDesconhecido.Name = "BtnDesconhecido";
             this.BtnDesconhecido.Size = new System.Drawing.Size(22, 23);
             this.BtnDesconhecido.TabIndex = 5;
